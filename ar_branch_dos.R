@@ -1,4 +1,11 @@
 #hola mundo
 #semen
-library(pacman)
-p_load(sjmisc, dplyr, ggplot2)
+pacman::p_load(
+  haven, 
+  car,
+  corrplot,
+  dplyr, 
+  stargazer,
+  lme4)
+
+mlm = read_dta("http://www.stata-press.com/data/mlmus3/hsb.dta")
